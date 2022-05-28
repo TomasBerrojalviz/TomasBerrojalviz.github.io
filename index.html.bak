@@ -10,7 +10,7 @@
   <body>  
    <h2>✨Juego de dioses✨</h2>  
    <p>🥵Pulse el boton segun quien reciba la prenda🥵</p>  
-   <button onclick="juego2(0)">PARA TOPY</button>  
+   <!--<button onclick="juego2(0)">PARA TOPY</button>  -->
    <button onclick="juego2(1)">PARA GIA</button>  
    <p id="salida"></p>  
    
