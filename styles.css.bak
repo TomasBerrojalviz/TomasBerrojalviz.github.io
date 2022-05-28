@@ -168,7 +168,7 @@
 		position: relative;
 		perspective: 600px;
 		top: -75px;
-		left: -15px;
+		left: -17px;
 	}
 	.accion {
 		width: 75px;
