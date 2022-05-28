@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>  
   <body>  
-   <h2>✨Juego de dioses✨</h2>  
+   <h2>✨🥵Dados Locos🥵✨</h2>  
    <p>🥵Pulse el boton segun quien reciba la prenda🥵</p>  
    <button onclick="juego2(0)">PARA TOPY</button>
    <button onclick="juego2(1)">PARA GIA</button>  
@@ -23,7 +23,7 @@
             </div>
             <div class="cube-face back">
                 <div class="inside">
-                    <span class="frase">Pajear/Masajear</span>
+                    <span class="frase">Pajear / Masajear</span>
                 </div>
             </div>
             <div class="cube-face left">
