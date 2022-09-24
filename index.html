@@ -36,7 +36,7 @@
                 <h3 class="letra" id="salida"></h3>  
             </div>
             
-            <div class="accion" onclick="tirarDado(cube)">
+            <div class="accion" onclick="tirarDado(cube, 0);printResultado();">
                 <div class="cube">
                     <div class="cube-face front">
                         <div class="inside">
@@ -71,7 +71,7 @@
                 </div>
             </div>
                 
-            <div id="partes_topy" style.display='none' class="partes" onclick="tirarDado(cube1)">
+            <div id="partes_topy" style.display='none' class="partes" onclick="tirarDado(cube1, 1);printResultado();">
                 <div class="cube1">
                     <div class="cube-face front">
                         <div class="inside">
@@ -106,7 +106,7 @@
                 </div>
             </div>
                 
-            <div id="partes_gia" class="partes" onclick="tirarDado(cube2)">
+            <div id="partes_gia" class="partes" onclick="tirarDado(cube2, 2);printResultado();">
                 <div class="cube2">
                     <div class="cube-face front">
                         <div class="inside">
@@ -141,7 +141,7 @@
                 </div>
             </div>
                 
-            <div class="tiempo" onclick="tirarDado(cube3)">
+            <div class="tiempo" onclick="tirarDado(cube3, 3);printResultado();">
                 <div class="cube3">
                     <div class="cube-face front">
                         <div class="inside">

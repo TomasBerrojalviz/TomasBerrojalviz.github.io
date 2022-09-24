@@ -10,6 +10,7 @@ var dadoTopy = "";
 var dadoGia = "";
 var dadoTiempo = "";
 var resultado = ""; 
+var gia;
 
 
 // 1 6 3 4 5 2
@@ -66,34 +67,21 @@ function tirarDado(cube, nro){
 
 }
 
-function juego2(gia) {
+function juego2(esGia) {
+    gia = esGia;
 	tirarDado(cube, 0);
-        if(!gia){
-            mostrar('partes_topy');
-            ocultar('partes_gia');
-            tirarDado(cube1, 1);
-        }
-        else{
-            ocultar('partes_topy');
-            mostrar('partes_gia');
-            tirarDado(cube2, 2);
-        }
-        tirarDado(cube3, 3);
-    
-    setTimeout(() => {
-        resultado = dadoAccion;
-        if(dadoAccion != accion[1]){
-            if(!gia){
-                resultado += " " + dadoTopy;
-            }
-            else{
-                resultado += " " + dadoGia;
-            }
-            resultado += " " + dadoTiempo;
-        }
-        console.log(resultado);
-        document.getElementById("salida").innerHTML = '<b>'+resultado+'</b>';
-    }, 1800);
+    if(!gia){
+        mostrar('partes_topy');
+        ocultar('partes_gia');
+        tirarDado(cube1, 1);
+    }
+    else{
+        ocultar('partes_topy');
+        mostrar('partes_gia');
+        tirarDado(cube2, 2);
+    }
+    tirarDado(cube3, 3);
+    printResultado();
 
 }
 function juego(quien) {
@@ -140,7 +128,20 @@ function mostrar(id){
     document.getElementById(id).style.display = 'block';
 }
 
-function resultado(){
-    document.getElementById(id).style.display = 'block';
+function printResultado(){
+    setTimeout(() => {
+        resultado = dadoAccion;
+        if(dadoAccion != accion[1]){
+            if(!gia){
+                resultado += " " + dadoTopy;
+            }
+            else{
+                resultado += " " + dadoGia;
+            }
+            resultado += " " + dadoTiempo;
+        }
+        console.log(resultado);
+        document.getElementById("salida").innerHTML = '<b>'+resultado+'</b>';
+    }, 1800);
 }
             
