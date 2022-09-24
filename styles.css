@@ -1,3 +1,7 @@
+body {
+    background-image: url('wallpaper.jpg');
+}
+
 .tiempo {
     width: 200px;
     height: 200px;
@@ -8,6 +12,12 @@
 	left: 300px;
 	grid-template-columns: auto;
 }
+
+.letra {
+    color:crimson;
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em blue;
+}
+
 .partes {
     width: 200px;
     height: 200px;
@@ -65,7 +75,8 @@
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    background: white;
+    background: rgba(77, 66, 66, 0.99);
+    box-shadow: 0 0 0.2em red, 0 0 0.1em blue;
 
     border: black 1px solid;
     border-radius: 2.5%;
@@ -118,6 +129,7 @@
     justify-self: center;
     align-self: center;
 	text-align: center;
+    color: crimson;
 }
 
 .front .inside .frase {
@@ -196,7 +208,7 @@
 		justify-content: center;
 		align-items: center;
 		font-size: 20px;
-		background: white;
+		background: grey;
 
 		border: black 1px solid;
 		border-radius: 2.5%;
@@ -241,6 +253,7 @@
 		justify-self: center;
 		align-self: center;
 		text-align: center;
+        color: crimson;
 	}
 
 } 
