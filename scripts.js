@@ -22,28 +22,24 @@ var gia;
 var tiempo = [];
 var tiempos = $('[id=tiempo]');
 for(var i = 0; i < tiempos.length; i++){
-    console.log(tiempos[i].innerHTML);
     tiempo[i] = tiempos[i].innerHTML;
 }
 
 var partes_topy = [];
 var parte_topy = $('[id=parte_topy]');
 for(var i = 0; i < parte_topy.length; i++){
-    console.log(parte_topy[i].innerHTML);
     partes_topy[i] = parte_topy[i].innerHTML;
 }
 
 var partes_gia = [];
 var parte_gia = $('[id=parte_gia]');
 for(var i = 0; i < parte_gia.length; i++){
-    console.log(parte_gia[i].innerHTML);
     partes_gia[i] = parte_gia[i].innerHTML;
 }
 
 var accion = [];
 var acciones = $('[id=accion]');
 for(var i = 0; i < acciones.length; i++){
-    console.log(acciones[i].innerHTML);
     accion[i] = acciones[i].innerHTML;
 }
 // var accion=["Chupar","✨69✨","Dar besos en","Acariciar","Lamer","Pajear/Masajear"];
@@ -68,8 +64,6 @@ function tirarDado(cube, nro){
                 dadoTiempo = tiempo[randomValue-1];
             break;
         }
-        console.log("nro dado: " + nro );
-        console.log(`randomValue: ${randomValue}` );
         
         switch(randomValue) {
             case 1:             
@@ -168,7 +162,6 @@ function printResultado(){
             }
             resultado += " " + dadoTiempo;
         }
-        console.log(resultado);
         document.getElementById("salida").innerHTML = '<b>'+resultado+'</b>';
     }, 1800);
 }
