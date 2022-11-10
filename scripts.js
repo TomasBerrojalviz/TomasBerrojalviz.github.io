@@ -15,10 +15,38 @@ var gia;
 
 // 1 6 3 4 5 2
 
-var tiempo=["por 30 segundos","hasta acabar","por 1 minutos","por 2 minutos","cuanto desee","por 45 segundos"];
-var partes_topy=["la pija","el pelo","el cuello","el torso","la boca","los huevos"];
-var partes_gia=["la concha","la boca","el culo","las piernas","el pelo","las tetas"];
-var accion=["Chupar","✨69✨","Dar besos en","Acariciar","Lamer","Pajear/Masajear"];
+// var tiempo=["por 30 segundos","hasta acabar","por 1 minuto","por 2 minutos","cuanto desee","por 45 segundos"];
+// var partes_topy=["la pija","el pelo","el cuello","el torso","la boca","los huevos"];
+// var partes_gia=["la concha","la boca","el culo","las piernas","el pelo","las tetas"];
+
+var tiempo = [];
+var tiempos = $('[id=tiempo]');
+for(var i = 0; i < tiempos.length; i++){
+    console.log(tiempos[i].innerHTML);
+    tiempo[i] = tiempos[i].innerHTML;
+}
+
+var partes_topy = [];
+var parte_topy = $('[id=parte_topy]');
+for(var i = 0; i < parte_topy.length; i++){
+    console.log(parte_topy[i].innerHTML);
+    partes_topy[i] = parte_topy[i].innerHTML;
+}
+
+var partes_gia = [];
+var parte_gia = $('[id=parte_gia]');
+for(var i = 0; i < parte_gia.length; i++){
+    console.log(parte_gia[i].innerHTML);
+    partes_gia[i] = parte_gia[i].innerHTML;
+}
+
+var accion = [];
+var acciones = $('[id=accion]');
+for(var i = 0; i < acciones.length; i++){
+    console.log(acciones[i].innerHTML);
+    accion[i] = acciones[i].innerHTML;
+}
+// var accion=["Chupar","✨69✨","Dar besos en","Acariciar","Lamer","Pajear/Masajear"];
 
 function tirarDado(cube, nro){
     cube.style.transition = '';
@@ -48,7 +76,7 @@ function tirarDado(cube, nro){
                 cube.style.transform = `translateY(200px) rotateX(3600deg) rotateY(3600deg) rotateZ(3600deg)`;
                 break;
             case 2:
-                cube.style.transform = `translateY(200px) rotateX(4410deg) rotateY(3600deg) rotateZ(3600deg)`;
+                cube.style.transform = `translateY(200px) rotateX(3600deg) rotateY(1980deg) rotateZ(3600deg)`;
                 break;
             case 3:
                 cube.style.transform = `translateY(200px) rotateX(3600deg) rotateY(4410deg) rotateZ(3600deg)`;
@@ -60,7 +88,7 @@ function tirarDado(cube, nro){
                 cube.style.transform = `translateY(200px) rotateX(2430deg) rotateY(3600deg) rotateZ(3600deg)`;
                 break;
             case 6:
-                cube.style.transform = `translateY(200px) rotateX(3600deg) rotateY(1980deg) rotateZ(3600deg)`;
+                cube.style.transform = `translateY(200px) rotateX(4410deg) rotateY(3600deg) rotateZ(3600deg)`;
                 break;
         };
     }, time * 10);
@@ -131,7 +159,7 @@ function mostrar(id){
 function printResultado(){
     setTimeout(() => {
         resultado = dadoAccion;
-        if(dadoAccion != accion[1]){
+        if(dadoAccion != accion[5]){
             if(!gia){
                 resultado += " " + dadoTopy;
             }
